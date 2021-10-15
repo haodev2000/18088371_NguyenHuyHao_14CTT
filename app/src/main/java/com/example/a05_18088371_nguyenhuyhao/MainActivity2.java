@@ -44,7 +44,7 @@ public class MainActivity2 extends AppCompatActivity {
         songTitle = findViewById(R.id.txtNameSong);
         songSinger = findViewById(R.id.txtNameSinger);
         mSeekBarTime = findViewById(R.id.seekBar);
-
+        imgXoay = findViewById(R.id.imgXoay);
 
         mSongs = (List<Song>) getIntent().getSerializableExtra("listMusic");
         Song song = (Song) getIntent().getSerializableExtra("song");
@@ -58,7 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
         }
 
         Animation xoay = AnimationUtils.loadAnimation(this, R.anim.xoay);
-        image_layout2.startAnimation(xoay);
+        imgXoay.startAnimation(xoay);
 
 
         play.setOnClickListener(new View.OnClickListener() {
